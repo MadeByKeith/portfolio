@@ -1,5 +1,6 @@
 @import 'config';
 @import 'menu';
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,100,400');
 
 * {
   box-sizing: border-box;
@@ -11,8 +12,14 @@ body {
   color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Raleway", sans-serif;
   line-height: 1.5;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 //Headings
@@ -46,6 +53,10 @@ header {
 
 .text-secondary {
   color: $secondary-color;
+}
+
+.text-tretiary {
+  color: $tretiary-color;
 }
 
 main {
@@ -113,6 +124,10 @@ main {
   }
 }
 
+.txt-type>.txt {
+  border-right: 0.1rem solid #fff;
+}
+
 //Work / Projects
 .projects {
   display: grid;
@@ -140,7 +155,7 @@ main {
   margin-top: 1rem;
 
   div {
-    font-size: 2rem;
+    font-size: 1.5rem;
     border: 3px#fff solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
